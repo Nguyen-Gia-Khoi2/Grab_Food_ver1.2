@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+}
+.Container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: 100%;
+    
+    background-color: transparent;
+}
+
+.scrolled {
+    background-color: white; /* Change to the desired color */
+    width: 100%;
+    height: 88px;
+}
+
+.scrolled .Logo_image {
+    margin-top: 10px;
+    content: url('../assets/Logo2.svg'); /* Change to the path of your scroll logo */
+}
+
+@media (max-width: 768px){
+    .Header{
+        /* justify-content: end!important; */
+        background-color: white;
+        max-height: 48px;
+        box-shadow: 2px 2px 1px 1px rgba(77, 76, 76, 0.2);
+        justify-content: space-between;
+    }
+    .Logo{
+        max-height:  48px!important;
+        margin: 0!important;
+    }
+    .Logo_image{
+
+        /* filter: invert(61%) sepia(9%) saturate(2640%) hue-rotate(74deg) brightness(96%) contrast(82%); */
+        margin: 0!important;
+    }
+    .Cart{
+        display: none;
+    }
+    .ButtonsContainer{
+        right: 0;
+    }
+    .Regis_login{
+        max-height: 25px;
+        width: auto;
+        border: 0.5px solid rgb(240, 239, 239)!important;
+        background-color: white!important;
+    }
+    .dropdown{
+        border: 0.5px solid rgb(240, 239, 239)!important;
+        background-color: white!important;
+        max-height: 25px;
+        
+    }
+    .text_vn_en{
+        
+        margin: 4px!important;
+    }
+    .dropdown_content{
+        margin-top: 5px!important;
+    }
+    .VN,
+    .EN{
+        max-height: 30px;
+    }
+
+    
+}
+.Header {
+    width: 100%;
+    max-width: 1280px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute items evenly */
+    padding: 0 40px; /* Adjust padding as needed */
+    margin: 0 auto;
+}
+
+.Logo {
+    height: 88px;
+}
+
+.Logo_image {
+    height: 50px;
+    margin-top: 10px;
+    width: auto;
+    
+}
+
+.ButtonsContainer {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+}
+
+.Cart {
+    width: 40px;
+    height: 38px;
+    border-radius: 5px;
+    border-color: white;
+    background-color: white;
+    cursor: pointer;
+}
+
+.Cartimage {
+    width: 100%;
+    height: 100%;
+}
+
+.Regis_login {
+    height: 38px;
+    padding: 0 12px;
+    border-radius: 5px;
+    border-color: white;
+    font-family: Arial, sans-serif; /* Use proper font-family syntax */
+    margin-left: 1rem; /* Adjust margin to create space between logo and buttons */
+    background-color: white;
+    cursor: pointer;
+}
+
+.dropdown {
+    width: 48px;
+    height: 38px;
+    text-align: center;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(241, 241, 241);
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 12px;
+        
+  }
+  
+  .text_vn_en {
+    color: rgb(103, 103, 103);
+    display: block;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    height: auto;
+    
+  }
+
+.dropdown_content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+    margin-top: 15px;
+    border-radius: 1rem;
+    transition: opacity 0.5s, visibility 0.5s; /* Adjust as needed */
+}
+
+.dropdown:hover .dropdown_content {
+    opacity: 1;
+    visibility: visible;
+    
+}
+  
+  .VN,
+.EN {
+    color: #333;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    text-align: center;
+    border-radius: 1rem;
+    
+  }
+  
+  .VN:hover,
+  .EN:hover {
+    background-color: rgb(221, 239, 224);
+    
+  }
